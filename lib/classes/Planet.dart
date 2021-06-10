@@ -15,4 +15,16 @@ class Planet {
       required this.gravity,
       required this.description,
       required this.image});
+
+  factory Planet.fromJson(Map<String, dynamic> json) {
+    return Planet(
+      id: json['planetImage'],
+      name: json['planetName'],
+      location: json['planetSubtitle'],
+      distance: json['velocity1'].toString(),
+      gravity: json['velocity2'].toString(),
+      description: json['planetSubtitle'],
+      image: json['planetImage'],
+    );
+  }
 }
