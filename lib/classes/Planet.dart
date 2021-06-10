@@ -21,8 +21,8 @@ class Planet {
       id: json['planetImage'],
       name: json['planetName'],
       location: json['planetSubtitle'],
-      distance: json['velocity1'].toString(),
-      gravity: json['velocity2'].toString(),
+      distance: '${json['velocity1'].toString()}m Km',
+      gravity: '${json['velocity2'].toString()} m/s',
       description: json['planetSubtitle'],
       image: json['planetImage'],
     );
